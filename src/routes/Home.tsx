@@ -15,6 +15,11 @@ import 'swiper/css/navigation';
 import Blockin from '@/assets/investors/blockin.png';
 import Logo from '@/assets/logo.png';
 import Forgame from '@/assets/sponsors/forgame.png';
+import Twitter from '@/assets/news/twitter.png';
+
+import Team1 from '@/assets/teams/team1.png';
+import Team2 from '@/assets/teams/team2.png';
+import Team3 from '@/assets/teams/team3.png';
 
 const Abouts = [
   {
@@ -83,6 +88,40 @@ const Sponsors = [
   Forgame,
 ];
 
+const news = [
+  {
+    img: Logo,
+    text: 'The Crypto-Fintech Laboratory of HKUST and BTC.com announced a strategic collaboration to leverage the complementary advantages of its research and academic strengths.',
+  },
+  {
+    img: Twitter,
+    text: 'HKUST Crypto-Fintech Lab isHKUST Crypto-Fintech Lab is an organization based in HKUST and aims to provides solutions to current financial problem. With over 30 scholars and students, the lab focuses on cryptoasset trading, DeFi Projects and blockchain education. an organization based in HKUST and aims to provides solutions to current financial problem. With over 30 scholars and students, the lab focuses on cryptoasset trading, DeFi Projects and blockchain education.',
+  },
+];
+
+const Teams = [
+  {
+    name: 'WANG Yang',
+    img: Team1,
+    intro:
+      'Vice President for Institutional Advancement.  Founder of HKUST CryptoFintech Lab.  Associate Director of HKUST Big Data Institute.  Director of HKUST Big Data and BioIntelligence Lab.',
+  },
+
+  {
+    name: 'CHEN Kani',
+    img: Team2,
+    intro:
+      'Department of Mathematics(Director). Fellow of Institute of Mathematical Statistics. Director of Crypto-Fintech Lab and MSc Financial Mathematics.',
+  },
+
+  {
+    name: 'ZHENG Jiheng',
+    img: Team3,
+    intro:
+      'Department of Industrial Engineering and Decision Analytics.  Associate director of HKUST Crypto-Fintech Lab.',
+  },
+];
+
 const chunkArray = (
   array: Array<{
     title: string;
@@ -116,9 +155,9 @@ function Home() {
           <source src={Background} type="video/mp4" />
         </video>
         <section>
-          <h2>A pioneer of Web3 in Hong Kong</h2>
+          <p className="pioneer">A pioneer of Web3 in Hong Kong</p>
 
-          <h1>Crypto-Fintech Lab @HKUST</h1>
+          <h1 className="name">Crypto-Fintech Lab @HKUST</h1>
           <div>
             <p>
               The Crypto-Fintech Lab at HKUST, backed by Foga Technology, unites
@@ -135,7 +174,7 @@ function Home() {
       {/* about */}
       <div className="abouts">
         <section>
-          <h1>About Us</h1>
+          <h2>About Us</h2>
           <div></div>
           <p>
             In the last decade, financial technology has surged, with blockchain
@@ -189,7 +228,6 @@ function Home() {
       </div>
 
       {/* invsetor & sponsor */}
-
       <div className="investors-sponsors">
         <div>
           <h2>Investors</h2>
@@ -239,6 +277,69 @@ function Home() {
             <div className="swiper-button-next"></div>
           </div>
         </div>
+      </div>
+
+      {/* news */}
+      <div className="news-events">
+        <h2>News & Events</h2>
+        <p className="">Follow our news and blog</p>
+
+        <section>
+          <div className="activities">
+            <h3>Activities</h3>
+            <div></div>
+            <p>
+              Web3.0 Carnival is a series of industry dialogues in the format of
+              panel discussions with leading entrepreneurs in the burgeoning
+              Web3 sectors and top-notch professionals from leading enterprises
+            </p>
+          </div>
+
+          <div className="news">
+            {news.map((item, index) => {
+              return (
+                <div className="news-item" key={index}>
+                  <div className="img-wrap">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div className="news-text-wrap">
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+
+      {/* teams */}
+      <div className="teams">
+        <h2>Teams</h2>
+
+        <section>
+          {Teams.map((item, index) => {
+            return (
+              <div className="team-member-card" key={index}>
+                <div className="img-wrap">
+                  <img src={item.img} alt="" />
+                </div>
+                <div className="team-member-info-wrap">
+                  <p className="name">{item.name}</p>
+                  <p className="intro">{item.intro}</p>
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </div>
+
+      {/* contact */}
+      <div className="contact">
+        <h2>Contact</h2>
+
+        <section>
+          <div className="lab-info"></div>
+        </section>
       </div>
     </div>
   );
