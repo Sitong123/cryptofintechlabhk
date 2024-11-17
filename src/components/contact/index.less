@@ -1,0 +1,81 @@
+.contact {
+  background-color: #e5f5f6;
+  padding: 42px 0;
+
+  section {
+    margin-left: 120px;
+    margin-top: 25px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: -40px;
+
+    .lab-info {
+      background-color: #ffffff;
+      border-radius: 15px;
+      width: 400px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon-wrap {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          .item-icon {
+            font-size: 20px;
+            color: #16df7e;
+          }
+        }
+
+        .icon-wrap:hover {
+          background-color: #16df7e;
+
+          .item-icon {
+            color: #fff;
+          }
+        }
+
+        .name {
+          color: #60697b;
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 27px;
+        }
+
+        .text {
+          color: #949dac;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .google-map {
+      width: 700px;
+      height: 400px;
+      border-radius: 15px;
+      // position: absolute;
+      // left: 350px;
+      // top: 50%;
+      // transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+
+  video {
+    width: 100%;
+  }
+
+  section {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 80%;
+    left: 8%;
+    bottom: 45px;
+
+    .pioneer {
+      font-size: 28px;
+      font-weight: 200;
+      font-style: italic;
+      line-height: 34px;
+      margin-left: 30px;
+    }
+
+    .name {
+      font-size: 64px;
+      font-weight: 600;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      line-height: 77px;
+      margin-bottom: 42px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+
+      p {
+        width: 710px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: justify;
+      }
+
+      button {
+        width: 200px;
+        height: 70px;
+        border: 3px solid rgb(229, 245, 246);
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    section {
+      .name {
+        font-size: 48px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    section {
+      width: 90%;
+      left: 5%;
+      bottom: 25px;
+
+      .name {
+        font-size: 36px;
+        line-height: 58px;
+        margin-bottom: 20px;
+      }
+
+      .pioneer {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 20px;
+      }
+
+      div {
+        flex-direction: column;
+
+        p {
+          width: 100%;
+          font-size: 18px;
+          line-height: 18px;
+        }
+
+        button {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    min-width: 400px;
+
+    section {
+      width: 90%;
+      left: 3%;
+      bottom: 15px;
+
+      .name {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      .pioneer {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 10px;
+      }
+
+      div {
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          width: 100%;
+          font-size: 12px;
+          line-height: 12px;
+        }
+
+        button {
+          width: 100px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
