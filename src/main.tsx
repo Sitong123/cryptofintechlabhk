@@ -4,6 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root.tsx';
 import './index.css';
 import Home from './routes/Home';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const router = createBrowserRouter([
   {

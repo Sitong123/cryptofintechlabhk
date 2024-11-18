@@ -1,8 +1,8 @@
 .abouts {
   background: #d4e5e7;
-  padding: 100px 0 65px;
+  padding: 100px 0 45px;
 
-  section:nth-child(1) {
+  .about-title-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +34,12 @@
     }
   }
 
-  section:nth-child(2) {
+  .about-content-wrap {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin: 45px auto;
-    width: 90%;
+    width: 80%;
 
     .about-content {
       width: 325px;
@@ -72,14 +72,14 @@
 
 @media (max-width: 900px) {
   .abouts {
-    padding: 60px 0 35px;
+    padding: 80px 0 45px;
 
-    section:nth-child(1) {
+    .about-title-wrap {
       flex-direction: column;
 
       .about-title {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 24px;
       }
 
       div {
@@ -92,7 +92,7 @@
       }
     }
 
-    section:nth-child(2) {
+    .about-content-wrap {
       .about-content {
         h3 {
           font-size: 20px;
@@ -110,9 +110,9 @@
 
 @media (max-width: 660px) {
   .abouts {
-    padding: 40px 0 25px;
+    padding: 75px 0 45px;
 
-    section:nth-child(2) {
+    .about-content-wrap {
       flex-direction: column;
       align-items: center;
 

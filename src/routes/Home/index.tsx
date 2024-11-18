@@ -14,7 +14,7 @@ import './index.less';
 
 function Home() {
   return (
-    <div className="homo-page">
+    <div className="relative top-[72px]">
       <Hero />
 
       <About />
