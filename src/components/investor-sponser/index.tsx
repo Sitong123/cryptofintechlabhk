@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
-import { INVESTOR_LIST, SPONSOR_LIST } from '@/lib/constant';
+import { INVESTOR_LIST, SPONSOR_PARTNER_LIST } from '@/lib/constant';
 
 import './index.less';
 import { useEffect, useState } from 'react';
@@ -57,7 +57,6 @@ function InvestorSponser() {
       </div>
 
       <div data-aos="fade-left">
-        {' '}
         <div className="mt-16">
           <h2 className="investors-sponsors-title">Sponsors & Partners</h2>
           <div className="investors-sponsors-swiper">
@@ -72,7 +71,7 @@ function InvestorSponser() {
               loop={true}
               threshold={0.1}
             >
-              {SPONSOR_LIST.map((Img, index) => (
+              {SPONSOR_PARTNER_LIST.map((Img, index) => (
                 <SwiperSlide className="content-item" key={index}>
                   <div className="content-item-img">
                     <img src={Img} alt="" />

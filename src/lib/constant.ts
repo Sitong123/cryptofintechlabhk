@@ -1,12 +1,50 @@
-import Blockin from '@/assets/investors/blockin.png';
 import Logo from '@/assets/logo.png';
-import Forgame from '@/assets/sponsors/forgame.png';
 import Twitter from '@/assets/news/twitter.png';
 
+// investors
+import Blizzard from '@/assets/investors/blizzard.jpg';
+import AvatarVentures from '@/assets/investors/AvatarVentures.jpg';
+import Gbv from '@/assets/investors/gbv.jpg';
+import Gerstenbrot from '@/assets/investors/Gerstenbrot.jpg';
+import Rarestone from '@/assets/investors/Rarestone.jpg';
+import Magnus from '@/assets/investors/Magnus.jpg';
+import Em3dao from '@/assets/investors/em3dao.jpg';
+import BlackPine from '@/assets/investors/BlackPine.jpg';
+import Blocks from '@/assets/investors/8Blocks.jpg';
+import Chiron from '@/assets/investors/ChironPartners.jpg';
+import Winkrypto from '@/assets/investors/Winkrypto.jpg';
+import Avalaunch from '@/assets/investors/Avalaunch.jpg';
+import Blockin from '@/assets/investors/Blockin.jpg';
+import HelixFund from '@/assets/investors/HelixFund.png';
+import CMTDigital from '@/assets/investors/CMTDigital.jpg';
+import Evernew from '@/assets/investors/Evernew.jpg';
+import lolcapital from '@/assets/investors/lolcapital.webp';
+import Ward from '@/assets/investors/4Ward.png';
+import C2ventures from '@/assets/investors/c2ventures.webp';
+import Ariagroup from '@/assets/investors/ARIAGROUP.webp';
+import Stealthcapital from '@/assets/investors/stealthcapital.jpg';
+import BingX from '@/assets/investors/BingX.jpg';
+import Fenbushi from '@/assets/investors/Fenbushi.jpg';
+import DoraHacks from '@/assets/investors/DoraHacks.jpg';
+import Nvc from '@/assets/investors/nvc.png';
+import Unblock from '@/assets/investors/Unblock.png';
+import Nebulae from '@/assets/investors/Nebulae.png';
+
+// sponsors
+import Forgame from '@/assets/sponsors/Forgame.png';
+import VeChain from '@/assets/sponsors/VeChain.png';
+
+// partners
+import Btc from '@/assets/partners/btc.png';
+import Hashkey from '@/assets/partners/hashkey.png';
+import Sandbox from '@/assets/partners/sandbox.png';
+
+// teams
 import ProfWang from '@/assets/teams/ProfWang.jpeg';
 import ProfChen from '@/assets/teams/ProfChen.jpg';
 import ProfZheng from '@/assets/teams/ProfZheng.jpeg';
 
+// icons-contact
 import { FaRegCompass } from 'react-icons/fa6';
 import { LuMail, LuTwitter } from 'react-icons/lu';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
@@ -84,25 +122,36 @@ export const PROJECT_LIST = [
 ];
 
 export const INVESTOR_LIST = [
+  Blizzard,
+  AvatarVentures,
+  Gbv,
+  Gerstenbrot,
+  Rarestone,
+  Magnus,
+  Em3dao,
+  BlackPine,
+  Blocks,
+  Chiron,
+  Winkrypto,
+  Avalaunch,
   Blockin,
-  Blockin,
-  Logo,
-  Blockin,
-  Logo,
-  Blockin,
-  Blockin,
+  HelixFund,
+  CMTDigital,
+  Evernew,
+  lolcapital,
+  Ward,
+  C2ventures,
+  Ariagroup,
+  Stealthcapital,
+  BingX,
+  Fenbushi,
+  DoraHacks,
+  Nvc,
+  Unblock,
+  Nebulae,
 ];
 
-export const SPONSOR_LIST = [
-  Forgame,
-  Forgame,
-  Forgame,
-  Forgame,
-  Forgame,
-  Forgame,
-  Forgame,
-  Forgame,
-];
+export const SPONSOR_PARTNER_LIST = [Forgame, VeChain, Hashkey, Sandbox, Btc];
 
 export const NEWS_LIST = [
   {

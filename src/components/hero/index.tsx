@@ -19,7 +19,12 @@ function Hero() {
             blend academia and industry strengths to explore innovative
             solutions for the benefit of Hong Kong, Greater China, and beyond.
           </p>
-          <button>Twitter</button>
+          <button
+            className="twitter-btn"
+            onClick={() => window.open('https://x.com/CryptoHKUST')}
+          >
+            Twitter
+          </button>
         </div>
       </section>
     </div>
