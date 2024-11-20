@@ -21,39 +21,37 @@ const chunkArray = (
 function Project() {
   const groupedProjects = chunkArray(PROJECT_LIST, 6);
   return (
-    <Element name="Projects">
-      <div className="projects">
-        <div data-aos="fade-down">
-          <h2 className="project-title">Projects</h2>
-        </div>
-
-        <div data-aos="fade-up">
-          <Swiper
-            modules={[Pagination]}
-            loop={true}
-            threshold={0.1}
-            pagination={{
-              clickable: true,
-            }}
-            className="project-swiper"
-          >
-            {groupedProjects.map((group, index) => (
-              <SwiperSlide key={index}>
-                <section className="grid-container">
-                  {group.map((item, idx) => (
-                    <div className="project-content" key={idx}>
-                      <h3>{item.title}</h3>
-                      <div></div>
-                      <p>{item.text}</p>
-                    </div>
-                  ))}
-                </section>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <div className="projects">
+      <div data-aos="fade-down">
+        <h2 className="project-title">Projects</h2>
       </div>
-    </Element>
+
+      <div data-aos="fade-up">
+        <Swiper
+          modules={[Pagination]}
+          loop={true}
+          threshold={0.1}
+          pagination={{
+            clickable: true,
+          }}
+          className="project-swiper"
+        >
+          {groupedProjects.map((group, index) => (
+            <SwiperSlide key={index}>
+              <section className="grid-container">
+                {group.map((item, idx) => (
+                  <div className="project-content" key={idx}>
+                    <h3>{item.title}</h3>
+                    <div></div>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
   );
 }
 

@@ -26,68 +26,66 @@ function InvestorSponser() {
   }, []);
 
   return (
-    <Element name="Supporters">
-      <div className="investors-sponsors">
-        <div data-aos="fade-right">
-          <div>
-            <h2 className="investors-sponsors-title">Investors</h2>
-            <div className="investors-sponsors-swiper">
-              <Swiper
-                modules={[Navigation]}
-                navigation={{
-                  prevEl: '.swiper-button-prev',
-                  nextEl: '.swiper-button-next',
-                }}
-                slidesPerView={width < 900 ? 3 : 5}
-                spaceBetween={30}
-                loop={true}
-                threshold={0.1}
-              >
-                {INVESTOR_LIST.map((Img, index) => (
-                  <SwiperSlide className="content-item" key={index}>
-                    <div className="content-item-img">
-                      <img src={Img} alt="" />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-
-        <div data-aos="fade-left">
-          {' '}
-          <div className="mt-16">
-            <h2 className="investors-sponsors-title">Sponsors & Partners</h2>
-            <div className="investors-sponsors-swiper">
-              <Swiper
-                modules={[Navigation]}
-                navigation={{
-                  prevEl: '.swiper-button-prev',
-                  nextEl: '.swiper-button-next',
-                }}
-                slidesPerView={width < 900 ? 3 : 5}
-                spaceBetween={30}
-                loop={true}
-                threshold={0.1}
-              >
-                {SPONSOR_LIST.map((Img, index) => (
-                  <SwiperSlide className="content-item" key={index}>
-                    <div className="content-item-img">
-                      <img src={Img} alt="" />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </div>
+    <div className="investors-sponsors">
+      <div data-aos="fade-right">
+        <div>
+          <h2 className="investors-sponsors-title">Investors</h2>
+          <div className="investors-sponsors-swiper">
+            <Swiper
+              modules={[Navigation]}
+              navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+              }}
+              slidesPerView={width < 900 ? 3 : 5}
+              spaceBetween={30}
+              loop={true}
+              threshold={0.1}
+            >
+              {INVESTOR_LIST.map((Img, index) => (
+                <SwiperSlide className="content-item" key={index}>
+                  <div className="content-item-img">
+                    <img src={Img} alt="" />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
           </div>
         </div>
       </div>
-    </Element>
+
+      <div data-aos="fade-left">
+        {' '}
+        <div className="mt-16">
+          <h2 className="investors-sponsors-title">Sponsors & Partners</h2>
+          <div className="investors-sponsors-swiper">
+            <Swiper
+              modules={[Navigation]}
+              navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+              }}
+              slidesPerView={width < 900 ? 3 : 5}
+              spaceBetween={30}
+              loop={true}
+              threshold={0.1}
+            >
+              {SPONSOR_LIST.map((Img, index) => (
+                <SwiperSlide className="content-item" key={index}>
+                  <div className="content-item-img">
+                    <img src={Img} alt="" />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -10,6 +10,8 @@ import News from '@/components/news';
 import Teams from '@/components/teams';
 import Contact from '@/components/contact';
 
+import { Element } from 'react-scroll';
+
 import './index.less';
 
 function Home() {
@@ -17,17 +19,29 @@ function Home() {
     <div className="relative top-[72px]">
       <Hero />
 
-      <About />
+      <Element name="About Us">
+        <About />
+      </Element>
 
-      <Project />
+      <Element name="Projects">
+        <Project />
+      </Element>
 
-      <InvestorSponser />
+      <Element name="Supporters">
+        <InvestorSponser />
+      </Element>
 
-      <News />
+      <Element name="News & Events">
+        <News />
+      </Element>
 
-      <Teams />
+      <Element name="Teams">
+        <Teams />
+      </Element>
 
-      <Contact />
+      <Element name="Contact">
+        <Contact />
+      </Element>
     </div>
   );
 }

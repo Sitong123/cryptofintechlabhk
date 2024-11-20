@@ -31,10 +31,6 @@ function Header() {
     setOpen(newOpen);
   };
 
-  const handleSetActive = (to: string) => {
-    console.log(to);
-  };
-
   return (
     <div className="header">
       <img src={Logo} width={164} alt="Logo" />
