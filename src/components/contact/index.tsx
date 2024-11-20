@@ -27,10 +27,6 @@ function Contact() {
           <img src={Temp} alt="" />
         </div>
       </section>
-
-      <p className="copyright">
-        © Copyright CryptoFintech@HKUST. All Rights Reserved
-      </p>
     </div>
   );
 }

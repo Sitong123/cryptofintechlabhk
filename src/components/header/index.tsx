@@ -42,6 +42,7 @@ function Header() {
               to={item}
               smooth={true}
               duration={500}
+              offset={-72}
               className="navigation-link"
               activeClass="active-link"
               spy={true}
@@ -63,6 +64,7 @@ function Header() {
               to={item}
               smooth={true}
               duration={500}
+              offset={-72}
               className="navigation-link"
               activeClass="active-link"
               spy={true}

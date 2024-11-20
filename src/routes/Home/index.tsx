@@ -13,6 +13,7 @@ import Contact from '@/components/contact';
 import { Element } from 'react-scroll';
 
 import './index.less';
+import Footer from '@/components/footer';
 
 function Home() {
   return (
@@ -42,6 +43,8 @@ function Home() {
       <Element name="Contact">
         <Contact />
       </Element>
+
+      <Footer />
     </div>
   );
 }
