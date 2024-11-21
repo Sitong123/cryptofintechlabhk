@@ -6,8 +6,6 @@ import { INVESTOR_LIST, SPONSOR_PARTNER_LIST } from '@/lib/constant';
 import './index.less';
 import { useEffect, useState } from 'react';
 
-import { Element } from 'react-scroll';
-
 function InvestorSponser() {
   const [width, setWidth] = useState(window.innerWidth);
 
