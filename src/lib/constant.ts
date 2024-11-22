@@ -31,7 +31,7 @@ import Unblock from '@/assets/investors/Unblock.png';
 import Nebulae from '@/assets/investors/Nebulae.png';
 
 // sponsors
-import Forgame from '@/assets/sponsors/forgame.png';
+import Forgame from '@/assets/sponsors/Forgame.png';
 import VeChain from '@/assets/sponsors/VeChain.png';
 
 // partners
