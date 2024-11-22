@@ -2,15 +2,15 @@ import Logo from '@/assets/logo.png';
 import Twitter from '@/assets/news/twitter.png';
 
 // investors
-import Blizzard from '@/assets/investors/blizzard.jpg';
+import Blizzard from '@/assets/investors/Blizzard.jpg';
 import AvatarVentures from '@/assets/investors/AvatarVentures.jpg';
-import Gbv from '@/assets/investors/gbv.jpg';
+import Gbv from '@/assets/investors/Gbv.jpg';
 import Gerstenbrot from '@/assets/investors/Gerstenbrot.jpg';
 import Rarestone from '@/assets/investors/Rarestone.jpg';
 import Magnus from '@/assets/investors/Magnus.jpg';
-import Em3dao from '@/assets/investors/em3dao.jpg';
+import Em3dao from '@/assets/investors/Em3dao.jpg';
 import BlackPine from '@/assets/investors/BlackPine.jpg';
-import Blocks from '@/assets/investors/8Blocks.jpg';
+import Blocks from '@/assets/investors/Blocks.jpg';
 import Chiron from '@/assets/investors/ChironPartners.jpg';
 import Winkrypto from '@/assets/investors/Winkrypto.jpg';
 import Avalaunch from '@/assets/investors/Avalaunch.jpg';
@@ -18,15 +18,15 @@ import Blockin from '@/assets/investors/Blockin.jpg';
 import HelixFund from '@/assets/investors/HelixFund.png';
 import CMTDigital from '@/assets/investors/CMTDigital.jpg';
 import Evernew from '@/assets/investors/Evernew.jpg';
-import lolcapital from '@/assets/investors/lolcapital.webp';
-import Ward from '@/assets/investors/4Ward.png';
-import C2ventures from '@/assets/investors/c2ventures.webp';
-import Ariagroup from '@/assets/investors/ARIAGROUP.webp';
-import Stealthcapital from '@/assets/investors/stealthcapital.jpg';
+import Lolcapital from '@/assets/investors/Lolcapital.webp';
+import Ward from '@/assets/investors/Ward.png';
+import C2ventures from '@/assets/investors/C2ventures.webp';
+import Ariagroup from '@/assets/investors/Ariagroup.webp';
+import Stealthcapital from '@/assets/investors/Stealthcapital.jpg';
 import BingX from '@/assets/investors/BingX.jpg';
 import Fenbushi from '@/assets/investors/Fenbushi.jpg';
 import DoraHacks from '@/assets/investors/DoraHacks.jpg';
-import Nvc from '@/assets/investors/nvc.png';
+import Nvc from '@/assets/investors/Nvc.png';
 import Unblock from '@/assets/investors/Unblock.png';
 import Nebulae from '@/assets/investors/Nebulae.png';
 
@@ -118,7 +118,7 @@ export const INVESTOR_LIST = [
   HelixFund,
   CMTDigital,
   Evernew,
-  lolcapital,
+  Lolcapital,
   Ward,
   C2ventures,
   Ariagroup,
