@@ -33,7 +33,19 @@ function Header() {
 
   return (
     <div className="header">
-      <img src={Logo} width={164} alt="Logo" />
+      <Link
+        key={'Hero'}
+        to={'Hero'}
+        smooth={true}
+        duration={500}
+        offset={-72}
+        className="navigation-link"
+        activeClass="active-link"
+        spy={true}
+      >
+        <img src={Logo} width={164} alt="Logo" />
+      </Link>
+
       {width >= 900 ? (
         <ul className="navigation">
           {NAVIGATORS.map((item) => (

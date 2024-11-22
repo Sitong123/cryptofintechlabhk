@@ -45,8 +45,8 @@ import ProfChen from '@/assets/teams/ProfChen.jpg';
 import ProfZheng from '@/assets/teams/ProfZheng.jpeg';
 
 // icons-contact
-import { FaRegCompass } from 'react-icons/fa6';
-import { LuMail, LuTwitter } from 'react-icons/lu';
+import { FaRegCompass, FaXTwitter } from 'react-icons/fa6';
+import { LuMail } from 'react-icons/lu';
 import { MdOutlinePhoneAndroid } from 'react-icons/md';
 import { IoPersonOutline } from 'react-icons/io5';
 
@@ -98,26 +98,6 @@ export const PROJECT_LIST = [
   {
     title: 'KOIHub',
     text: 'KOIHub is a project sitting right at the gate from web2 to web3. Users can easily enter the world of Web3 by scanning QR codes and getting free NFTs.',
-  },
-  {
-    title: 'KOIHub',
-    text: 'KOIHub is a project sitting right at the gate from web2 to web3. Users can easily enter the world of Web3 by scanning QR codes and getting free NFTs.',
-  },
-  {
-    title: 'KOIHub',
-    text: 'KOIHub is a project sitting right at the gate from web2 to web3. Users can easily enter the world of Web3 by scanning QR codes and getting free NFTs.',
-  },
-  {
-    title: 'KOIHub',
-    text: 'KOIHub is a project sitting right at the gate from web2 to web3. Users can easily enter the world of Web3 by scanning QR codes and getting free NFTs.',
-  },
-  {
-    title: 'Degis',
-    text: 'A decentralized insurance platform. Provide better insurance products as well as innovative solutions via blockchain technology.',
-  },
-  {
-    title: 'Degis',
-    text: 'A decentralized insurance platform. Provide better insurance products as well as innovative solutions via blockchain technology.',
   },
 ];
 
@@ -209,9 +189,10 @@ export const CONTACT_LIST = [
     text: '+852 2358 7425',
   },
   {
-    icon: LuTwitter,
+    icon: FaXTwitter,
     name: 'Twitter',
-    text: 'https://x.com/hkuste',
+    text: 'https://x.com/CryptoHKUST',
+    link: 'https://x.com/CryptoHKUST',
   },
 ];
 

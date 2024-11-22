@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 
 function InvestorSponser() {
   const [width, setWidth] = useState(window.innerWidth);
+  const [slidesPerView, setSlidesPerView] = useState(5);
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,9 +24,17 @@ function InvestorSponser() {
     };
   }, []);
 
+  useEffect(() => {
+    if (width < 900) {
+      setSlidesPerView(3);
+    } else {
+      setSlidesPerView(5);
+    }
+  }, [width]);
+
   return (
     <div className="investors-sponsors">
-      <div data-aos="fade-right">
+      <div data-aos="zoom-in">
         <div>
           <h2 className="investors-sponsors-title">Investors</h2>
           <div className="investors-sponsors-swiper">
@@ -35,7 +44,7 @@ function InvestorSponser() {
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
               }}
-              slidesPerView={width < 900 ? 3 : 5}
+              slidesPerView={slidesPerView}
               spaceBetween={30}
               loop={true}
               threshold={0.1}
@@ -48,23 +57,25 @@ function InvestorSponser() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
+            {INVESTOR_LIST.length > slidesPerView && (
+              <>
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
+              </>
+            )}
           </div>
         </div>
-      </div>
 
-      <div data-aos="fade-left">
         <div className="mt-16">
           <h2 className="investors-sponsors-title">Sponsors & Partners</h2>
           <div className="investors-sponsors-swiper">
             <Swiper
               modules={[Navigation]}
               navigation={{
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
+                prevEl: '.sp-swiper-button-prev',
+                nextEl: '.sp-swiper-button-next',
               }}
-              slidesPerView={width < 900 ? 3 : 5}
+              slidesPerView={slidesPerView}
               spaceBetween={30}
               loop={true}
               threshold={0.1}
@@ -77,8 +88,12 @@ function InvestorSponser() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
+            {SPONSOR_PARTNER_LIST.length > slidesPerView && (
+              <>
+                <div className="sp-swiper-button-prev"></div>
+                <div className="sp-swiper-button-next"></div>
+              </>
+            )}
           </div>
         </div>
       </div>

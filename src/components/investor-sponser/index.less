@@ -17,6 +17,10 @@
     position: relative;
 
     .content-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       .content-item-img {
         width: 150px;
         height: 150px;
@@ -33,7 +37,8 @@
     }
   }
 
-  .swiper-button-prev {
+  .swiper-button-prev,
+  .sp-swiper-button-prev {
     position: absolute;
     left: -70px;
     top: 50%;
@@ -41,9 +46,16 @@
     color: #006394;
     height: 36px;
     margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
   }
 
-  .swiper-button-next {
+  .swiper-button-next,
+  .sp-swiper-button-next {
     position: absolute;
     right: -70px;
     top: 50%;
@@ -51,11 +63,34 @@
     color: #006394;
     height: 36px;
     margin-top: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
   }
 
   .swiper-button-prev::after,
-  .swiper-button-next::after {
+  .swiper-button-next::after,
+  .sp-swiper-button-prev::after,
+  .sp-swiper-button-next::after {
     font-size: 36px;
+    font-family: swiper-icons;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+  }
+
+  .sp-swiper-button-prev::after,
+  .swiper-button-prev::after {
+    content: 'prev';
+  }
+
+  .sp-swiper-button-next::after,
+  .swiper-button-next::after {
+    content: 'next';
   }
 }
 
@@ -96,18 +131,22 @@
       }
     }
 
-    .swiper-button-prev {
+    .swiper-button-prev,
+    .sp-swiper-button-prev {
       left: -50px;
       height: 24px;
     }
 
-    .swiper-button-next {
+    .swiper-button-next,
+    .sp-swiper-button-next {
       right: -50px;
       height: 24px;
     }
 
     .swiper-button-prev::after,
-    .swiper-button-next::after {
+    .swiper-button-next::after,
+    .sp-swiper-button-prev::after,
+    .sp-swiper-button-next::after {
       font-size: 24px;
     }
   }
@@ -129,18 +168,22 @@
       }
     }
 
-    .swiper-button-prev {
+    .swiper-button-prev,
+    .sp-swiper-button-prev {
       left: -35px;
       height: 18px;
     }
 
-    .swiper-button-next {
+    .swiper-button-next,
+    .sp-swiper-button-next {
       right: -35px;
       height: 18px;
     }
 
     .swiper-button-prev::after,
-    .swiper-button-next::after {
+    .swiper-button-next::after,
+    .sp-swiper-button-prev::after,
+    .sp-swiper-button-next::after {
       font-size: 18px;
     }
   }

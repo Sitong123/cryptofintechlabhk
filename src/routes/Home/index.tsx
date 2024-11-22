@@ -18,7 +18,9 @@ import Footer from '@/components/footer';
 function Home() {
   return (
     <div className="relative top-[72px]">
-      <Hero />
+      <Element name="Hero">
+        <Hero />
+      </Element>
 
       <Element name="About Us">
         <About />
