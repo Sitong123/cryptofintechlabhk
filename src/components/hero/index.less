@@ -11,6 +11,7 @@
     color: #ffffff;
     width: 80%;
     left: 8%;
+    top: 50%;
     bottom: 85px;
 
     .pioneer {
@@ -31,17 +32,9 @@
 
     div {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       gap: 30px;
-
-      p {
-        width: 710px;
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 25px;
-        text-align: justify;
-      }
 
       .twitter-btn {
         width: 200px;
@@ -74,7 +67,7 @@
 @media (max-width: 900px) {
   .hero {
     section {
-      width: 90%;
+      width: 80%;
       left: 5%;
       bottom: 55px;
 
@@ -93,12 +86,6 @@
       div {
         flex-direction: column;
 
-        p {
-          width: 100%;
-          font-size: 18px;
-          line-height: 18px;
-        }
-
         .twitter-btn {
           width: 150px;
           height: 50px;
@@ -112,9 +99,8 @@
 @media (max-width: 660px) {
   .hero {
     section {
-      width: 90%;
-      left: 3%;
-      bottom: 15px;
+      width: 80%;
+      left: 5%;
 
       .name {
         font-size: 20px;
@@ -132,16 +118,38 @@
         flex-direction: column;
         gap: 5px;
 
-        p {
-          width: 100%;
-          font-size: 12px;
-          line-height: 12px;
-        }
-
         .twitter-btn {
           width: 80px;
           height: 30px;
           font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .hero {
+    section {
+      top: 40%;
+      text-wrap: nowrap;
+
+      .name {
+        font-size: 16px;
+      }
+
+      .pioneer {
+        font-size: 14px;
+      }
+
+      div {
+        flex-direction: column;
+        gap: 5px;
+
+        .twitter-btn {
+          width: 60px;
+          height: 20px;
+          font-size: 8px;
         }
       }
     }

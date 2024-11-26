@@ -2,8 +2,6 @@ import './index.less';
 
 import { ABOUT_LIST } from '@/lib/constant';
 
-import { Element } from 'react-scroll';
-
 function About() {
   return (
     <div className="abouts">
@@ -12,11 +10,11 @@ function About() {
           <h2 className="about-title">About Us</h2>
           <div></div>
           <p>
-            In the last decade, financial technology has surged, with blockchain
-            leading the transformation across industries. This wave has birthed
-            groundbreaking technologies, numerous startups, and innovations in
-            banking, IoT, and supply chains. We are in a golden age of fintech,
-            blending data science, blockchain, and AI.
+            The Crypto-Fintech Lab at HKUST, backed by Foga Technology, unites
+            members and advisors to pioneer cutting-edge financial technology
+            research and applications. Situated in the tech hub of Hong Kong, we
+            blend academia and industry strengths to explore innovative
+            solutions for the benefit of Hong Kong, Greater China, and beyond.
           </p>
         </section>
       </div>
