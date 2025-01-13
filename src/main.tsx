@@ -6,6 +6,7 @@ import './index.css';
 import Home from './routes/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Careers from './routes/Careers/index.tsx';
 
 AOS.init();
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
     ],
+  },
+  {
+    path: '/careers',
+    element: <Careers />,
   },
 ]);
 
