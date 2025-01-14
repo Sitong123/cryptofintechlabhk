@@ -1,7 +1,8 @@
 import Logo from '@/assets/logo.png';
 
 import { NAVIGATORS } from '@/lib/constant';
-import { Drawer } from '@mui/material';
+import Drawer from '@mui/joy/Drawer';
+
 import { LuAlignJustify } from 'react-icons/lu';
 
 import { useEffect, useState } from 'react';
@@ -62,6 +63,9 @@ function Header() {
               {item}
             </Link>
           ))}
+          <a href="/careers" className="navigation-link">
+            Careers
+          </a>
         </ul>
       ) : (
         <button onClick={toggleDrawer(true)}>
@@ -84,6 +88,9 @@ function Header() {
               <button onClick={toggleDrawer(false)}> {item}</button>
             </Link>
           ))}
+          <a href="/careers" className="navigation-link">
+            Careers
+          </a>
         </div>
       </Drawer>
     </div>
