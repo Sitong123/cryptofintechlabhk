@@ -63,7 +63,7 @@ function Header() {
               {item}
             </Link>
           ))}
-          <a href="/careers" className="navigation-link">
+          <a href="/#/careers" className="navigation-link">
             Careers
           </a>
         </ul>
@@ -88,7 +88,7 @@ function Header() {
               <button onClick={toggleDrawer(false)}> {item}</button>
             </Link>
           ))}
-          <a href="/careers" className="navigation-link">
+          <a href="/#/careers" className="navigation-link">
             Careers
           </a>
         </div>

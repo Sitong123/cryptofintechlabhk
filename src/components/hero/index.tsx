@@ -22,16 +22,16 @@ function Hero() {
         </button>
       </div>
       <section>
-        <p className="pioneer">A pioneer of Web3 in Hong Kong</p>
         <h1 className="name">Crypto-Fintech Lab @HKUST</h1>
-        <div>
+        <p className="pioneer">A pioneer of Web3 in Hong Kong</p>
+        {/* <div>
           <button
             className="twitter-btn"
             onClick={() => window.open('https://x.com/CryptoHKUST')}
           >
             Twitter
           </button>
-        </div>
+        </div> */}
       </section>
     </div>
   );

@@ -12,6 +12,7 @@
     padding: 15px 40px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -40,49 +41,27 @@
 
   section {
     position: absolute;
-    bottom: 0;
     color: #ffffff;
-    width: 80%;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
     left: 8%;
-    top: 50%;
+    top: 65%;
     bottom: 85px;
+    // background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
 
     .pioneer {
-      font-size: 28px;
-      font-weight: 200;
+      font-size: 30px;
+      font-weight: 300;
       font-style: italic;
-      line-height: 34px;
       margin-left: 30px;
     }
 
     .name {
-      font-size: 64px;
+      font-size: 70px;
       font-weight: 600;
-      text-shadow: 0 4px 4px #00000040;
-      line-height: 77px;
-      margin-bottom: 42px;
-    }
-
-    div {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 30px;
-
-      .twitter-btn {
-        width: 200px;
-        height: 70px;
-        border: 3px solid #e5f5f6;
-        border-radius: 15px;
-        box-shadow: 0px 4px 4px 0px #00000040;
-        transition: all 0.3s ease;
-        align-self: flex-end;
-        font-size: 20px;
-      }
-
-      .twitter-btn:active {
-        transform: scale(0.96);
-      }
     }
   }
 }

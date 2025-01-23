@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root.tsx';
 import './index.css';
 import Home from './routes/Home';
@@ -10,7 +10,7 @@ import Careers from './routes/Careers/index.tsx';
 
 AOS.init();
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Root />,
