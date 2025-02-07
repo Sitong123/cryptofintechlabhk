@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+
     h3 {
       font-size: 30px;
       font-weight: 600;
@@ -49,7 +50,7 @@
     left: 8%;
     top: 65%;
     bottom: 85px;
-    // background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffde59;
     backdrop-filter: blur(4px);
 
     .pioneer {
@@ -78,15 +79,20 @@
 
 @media (max-width: 900px) {
   .hero {
+    .we-are-hiring {
+      h3 {
+        font-size: 22px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+    }
     section {
-      width: 80%;
       left: 5%;
-      bottom: 55px;
 
       .name {
         font-size: 36px;
-        line-height: 58px;
-        margin-bottom: 20px;
       }
 
       .pioneer {
@@ -113,34 +119,26 @@
     .we-are-hiring {
       left: 50%;
       top: 8%;
-      padding: 5px 10px;
-      transform: translateX(-50%);
-      width: 60%;
-      gap: 5px;
+      padding: 10px 20px;
+
       h3 {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       button {
         font-size: 10px;
-        padding: 4px 8px;
-        gap: 5px;
       }
     }
     section {
-      width: 80%;
       left: 5%;
+      top: 65%;
 
       .name {
-        font-size: 20px;
-        line-height: 20px;
-        margin-bottom: 10px;
+        font-size: 26px;
       }
 
       .pioneer {
         font-size: 16px;
-        line-height: 24px;
-        margin-left: 10px;
       }
 
       div {
@@ -157,10 +155,29 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .hero {
+    .we-are-hiring {
+      left: 40%;
+      top: 8%;
+      padding: 5px 10px;
+      width: 50%;
+      gap: 5px;
+      h3 {
+        font-size: 12px;
+      }
+
+      button {
+        font-size: 10px;
+        padding: 4px 8px;
+        gap: 5px;
+      }
+    }
     section {
-      top: 40%;
+      top: 55%;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
       text-wrap: nowrap;
 
       .name {
