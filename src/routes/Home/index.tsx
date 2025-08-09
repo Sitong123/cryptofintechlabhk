@@ -8,6 +8,7 @@ import Project from '@/components/project';
 import InvestorSponser from '@/components/investor-sponser';
 import News from '@/components/news';
 import Teams from '@/components/teams';
+import Members from '@/components/members';
 import Contact from '@/components/contact';
 
 import { Element } from 'react-scroll';
@@ -40,6 +41,10 @@ function Home() {
 
       <Element name="Teams">
         <Teams />
+      </Element>
+
+      <Element name="Members">
+        <Members />
       </Element>
 
       <Element name="Contact">

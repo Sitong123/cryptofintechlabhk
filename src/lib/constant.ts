@@ -56,6 +56,7 @@ export const NAVIGATORS = [
   'Supporters',
   'News & Events',
   'Teams',
+  'Members',
   'Contact',
 ];
 
