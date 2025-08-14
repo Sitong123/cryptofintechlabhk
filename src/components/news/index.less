@@ -2,6 +2,21 @@
   background: #e5f5f6;
   padding: 100px 0 45px;
 
+  .events-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    width: 100%;
+    margin-top: 20px;
+    .events-images {
+      width: 45%;
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+
   .news-events-title {
     color: #39424e;
     font-size: 48px;
@@ -21,17 +36,25 @@
 
   section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 45px;
     align-items: center;
     width: 80%;
     margin: 0 auto;
 
+    .activities-container {
+      display: flex;
+      gap: 45px;
+      justify-content: center;
+      width: 100%;
+    }
+
     .activities {
       border-radius: 20px;
       background: #d4e5e7;
       padding: 50px;
-      width: 40%;
+      width: 45%;
 
       h3 {
         color: #60697b;

@@ -39,10 +39,14 @@ import Btc from '@/assets/partners/btc.png';
 import Hashkey from '@/assets/partners/hashkey.png';
 import Sandbox from '@/assets/partners/sandbox.png';
 
+// events
+import Events1 from '@/assets/events/Tencent 1.jpg';
+import Events2 from '@/assets/events/Tencent 2.jpg';
+
 // teams
 import ProfWang from '@/assets/teams/ProfWang.jpeg';
 import ProfChen from '@/assets/teams/ProfChen.jpg';
-import ProfZheng from '@/assets/teams/ProfZheng.jpeg';
+import ProfZhang from '@/assets/teams/ProfZheng.jpeg';
 
 // icons-contact
 import { FaRegCompass, FaXTwitter } from 'react-icons/fa6';
@@ -145,6 +149,16 @@ export const NEWS_LIST = [
   },
 ];
 
+export const EVENTS_LIST=[
+{
+  img: Events1,
+},
+{
+  img: Events2,
+},
+];
+
+
 export const TEAM_LIST = [
   {
     name: 'WANG Yang',
@@ -161,8 +175,8 @@ export const TEAM_LIST = [
   },
 
   {
-    name: 'ZHENG Jiheng',
-    img: ProfZheng,
+    name: 'ZHANG Jiheng',
+    img: ProfZhang,
     intro:
       'Department of Industrial Engineering and Decision Analytics.  Associate director of HKUST Crypto-Fintech Lab.',
   },

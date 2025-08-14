@@ -1,4 +1,6 @@
 import { NEWS_LIST } from '@/lib/constant';
+import { EVENTS_LIST } from '@/lib/constant';
+
 import './index.less';
 
 function News() {
@@ -10,16 +12,6 @@ function News() {
       </div>
       <div data-aos="fade-up">
         <section>
-          <div className="activities">
-            <h3>Activities</h3>
-            <div></div>
-            <p>
-              Web3.0 Carnival is a series of industry dialogues in the format of
-              panel discussions with leading entrepreneurs in the burgeoning
-              Web3 sectors and top-notch professionals from leading enterprises
-            </p>
-          </div>
-
           <div className="news">
             {NEWS_LIST.map((item, index) => {
               return (
@@ -32,6 +24,44 @@ function News() {
                   </div>
                 </div>
               );
+            })}
+          </div>
+          <div className="activities-container">
+            <div className="activities">
+              <h3>Activities</h3>
+              <div></div>
+              <p>
+                Web3.0 Carnival is a series of industry dialogues in the format of
+                panel discussions with leading entrepreneurs in the burgeoning
+                Web3 sectors and top-notch professionals from leading enterprises
+              </p>
+            </div>
+            <div className="activities">
+              <h3>
+                Tencent's Lightspeed Studios & Hong Kong University of Science and
+                Technology Technology Collaboration Project Launch Meeting
+              </h3>
+              <div></div>
+              <p>
+                This event marks the initiation of a collaborative project between
+                Tencent's Lightspeed Studios and the Hong Kong University of
+                Science and Technology (HKUST). The primary goal of this
+                cooperation is to drive innovation and enhance research
+                capabilities in advanced technologies, particularly in gaming and
+                digital media. The meeting aims to outline strategic objectives
+                and establish frameworks for collaboration, fostering a
+                synergistic relationship that promotes cutting-edge developments
+                in these fields.
+              </p>
+            </div>
+          </div>
+          <div className="events-images-container">
+            {EVENTS_LIST.map((item, index) => {
+                return (
+                  <div className="events-images" key={index}>
+                    <img src={item.img} alt="" /> 
+                  </div>
+                );
             })}
           </div>
         </section>
