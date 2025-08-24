@@ -1,6 +1,5 @@
 import { NEWS_LIST } from '@/lib/constant';
 import { EVENTS_LIST } from '@/lib/constant';
-
 import './index.less';
 
 function News() {
@@ -26,8 +25,7 @@ function News() {
               );
             })}
           </div>
-          <div className="activities-container">
-            <div className="activities">
+          <div className="activities1">
               <h3>Activities</h3>
               <div></div>
               <p>
@@ -36,7 +34,7 @@ function News() {
                 Web3 sectors and top-notch professionals from leading enterprises
               </p>
             </div>
-            <div className="activities">
+            <div className="activities2">
               <h3>
                 Tencent's Lightspeed Studios & Hong Kong University of Science and
                 Technology Technology Collaboration Project Launch Meeting
@@ -54,16 +52,32 @@ function News() {
                 in these fields.
               </p>
             </div>
-          </div>
-          <div className="events-images-container">
-            {EVENTS_LIST.map((item, index) => {
-                return (
-                  <div className="events-images" key={index}>
-                    <img src={item.img} alt="" /> 
-                  </div>
-                );
-            })}
-          </div>
+            <div className="events-images">
+              {EVENTS_LIST.map((item,idx)=>(
+                 <img src={item.img} alt="" key={idx}/>
+              ))}        
+            </div>
+          <div className="activities3">
+              <h3>
+                HKUST launches "Aivilization" AI social simulation platform
+              </h3>
+              <div></div>
+              <a href="https://www.hkcd.com/hkcdweb/content/2025/08/19/content_8709701.html" target="_blank" rel="noopener noreferrer">
+              香港商報網– 科大推全球首個大型人工智能教育沙盒遊戲 提升AI素養 推展公眾科研
+              </a>
+              <div></div>
+              <a href="https://www.dotdotnews.com/a/202508/19/AP68a4029ee4b08d2905336a8d.html" target="_blank" rel="noopener noreferrer">
+              點新聞– 科大推「智能體世界」AI社會模擬平台 冀引領跨領域AI教育
+              </a>
+              <div></div>
+               <a href="https://www.miragenews.com/hkust-debuts-worlds-largest-ai-education-1517413/" target="_blank" rel="noopener noreferrer">
+              Mirage News HKUST Debuts World's Largest AI Education Sandbox Game
+              </a>
+              <div className="events-images">
+                <img src="" alt="">
+                </img>
+              </div>
+            </div>
         </section>
       </div>
     </div>

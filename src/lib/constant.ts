@@ -81,28 +81,24 @@ export const ABOUT_LIST = [
 
 export const PROJECT_LIST = [
   {
-    title: 'Degis',
-    text: 'A decentralized insurance platform. Provide better insurance products as well as innovative solutions via blockchain technology.',
+    title: 'Bauhinia AI',
+    text: 'A dynamic and fast-growing startup revolutionizing industries with innovative AI applications, poised for scale-up with a bold vision for the future.',
+    link: "https://bauhiniaai.com",
+    linktext: "Learn more from https://bauhiniaai.com",
   },
   {
-    title: 'Furion',
-    text: "Provide price reference for NFTs from their historical performances. Concentrate NFTs' liquidity based on their prices.",
+    title: 'Bauhinia RWA',
+    text: 'A pioneering new company leveraging cutting-edge Web3 technology and specializing in the tokenization of real-world assets (RWA), prepared to drive economic growth and societal impact on a global scale.',
+    link: "https://bauhinia-rwa.com",
+    linktext: "Learn more from https://bauhinia-rwa.com",
+  
   },
   {
-    title: 'Prestare',
-    text: 'An Under-Collateralized Borrowing Protocol Without any permission on assets Without using off-chain information.',
-  },
-  {
-    title: 'Talentre',
-    text: 'Talentre is a Web3 career platform, providing Web3 career training and job search services.',
-  },
-  {
-    title: 'Ovisor',
-    text: 'A decentralized investment that breaks investment barriers using advanced analytics and algorithms.',
-  },
-  {
-    title: 'KOIHub',
-    text: 'KOIHub is a project sitting right at the gate from web2 to web3. Users can easily enter the world of Web3 by scanning QR codes and getting free NFTs.',
+    title: 'Bauhinia Pulse',
+    text: 'An innovative simulated ecosystem leveraging digital replicas of human participants to deliver actionable insights, empowering organizations and individuals to make data-driven decisions in complex scenarios.',
+    link: "https://bauhiniapulse.com",
+    linktext:"Learn more from https://bauhiniapulse.com",
+  
   },
 ];
 

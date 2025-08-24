@@ -6,6 +6,8 @@ import { PROJECT_LIST } from '@/lib/constant';
 
 const chunkArray = (
   array: Array<{
+    linktext: string;
+    link: string | undefined;
     title: string;
     text: string;
   }>,
@@ -44,6 +46,10 @@ function Project() {
                     <h3>{item.title}</h3>
                     <div></div>
                     <p>{item.text}</p>
+                    <div></div>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {item.linktext}
+                    </a>
                   </div>
                 ))}
               </section>
